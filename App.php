@@ -6,7 +6,7 @@ Constante do path full das páginas.
 >>
 */
 
-define('INCLUDE_PATH_FULL','http://localhost/basemvc/Views/pages/');
+define('INCLUDE_PATH_FULL','http://localhost/galeriaFotos-MVC/Views/pages/');
 
 
 class App{
@@ -19,7 +19,7 @@ das paginas que estamos visualizando;
 */
 
   public function executar(){
-    $url = isset($_GET['url'])? explode('/',$_GET['url'])[0] : 'Home';
+    $url = isset($_GET['url'])? explode('/',$_GET['url'])[0] : 'Login';
     $url = ucfirst($url);
     $url.="Controller";
 
