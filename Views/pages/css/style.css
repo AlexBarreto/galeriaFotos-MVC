@@ -12,3 +12,11 @@ body, html{
   height: 100px;
   
 }
+
+#tela{
+  width: 100%;
+  max-width: 1280px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}

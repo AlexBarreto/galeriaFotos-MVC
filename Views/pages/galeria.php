@@ -19,3 +19,14 @@
       <div class = "col-sm-4"></div>
     </div><!--row-->
 </div><!--container-->
+
+<div class = "container">
+    <div id = "v-center"></div>
+    <div class = "row">
+    <div class = "col-sm-2"></div>
+        <div id = "tela" class = "col-sm-8">
+
+        </div><!--col-sm-4-->
+      <div class = "col-sm-2"></div>
+    </div><!--row-->
+</div><!--container-->

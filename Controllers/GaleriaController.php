@@ -17,7 +17,8 @@ Responsável em renderizar a view galeria
     }
     public function executar(){
       if(isset($_POST['acao'])){
-        $nomefile = \Models\VerificaFormulario::verificaArquivo();
+        $nomefile = \Models\VerificaFormulario::verificaImagem();
+        $img = \Models\ConfiguraImagem::redimensiona($nomefile);
         $descricao = [$_POST['descricao']][0];
         \Models\ConexaoMysql::inserirImagem($nomefile);
         \Models\VerificaFormulario::verificaId_imagem();
