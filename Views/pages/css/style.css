@@ -16,7 +16,111 @@ body, html{
 #tela{
   width: 100%;
   max-width: 1280px;
-  height: 600px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.minifoto{
   border: 1px solid #ccc;
   border-radius: 10px;
+  width: 123px;
+  height:133px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.minifoto img{
+
+  border-radius: 5px;
+  width: 110px;
+  height:129px;
+
+}
+
+
+
+#a{
+
+  display: none;
+
+} 
+
+#carregar{
+
+  background-color: 	#87CEEB;
+  padding-bottom: 80px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 100px;
+}
+
+#home{
+  
+  margin-top: 200px;
+
+}
+
+#tela img{
+  width: 120px;
+  height: 130px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#tela img:hover{
+  border: 3px solid #87CEEB;
+}
+
+#foto{
+
+  width: 100%;
+  height:650px;
+  margin-top: 100px;
+
+}
+
+#foto1{
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.hidden{
+
+  display: none;
+  flex-direction: column;
+
+}
+
+#show{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.descricao{
+  color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+
+.foto img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#img1{
+  cursor: pointer;
+}
+
+#voltacadastro{
+  margin-top: 50px;
 }

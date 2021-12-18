@@ -45,9 +45,9 @@ Função responsavel pela consulta de todos dados
  */ 
 
   
-  public function consultarDadosAll(){
-    $this->setConnection();
-    $sql_consult = $this->pdo->prepare("SELECT * FROM `info` INNER JOIN `imagens` ON `info`.`id_imagem` = `imagens`.`id`");
+  public static function consultarDadosAll(){
+    $pdo = self::setConnection();
+    $sql_consult = $pdo->prepare("SELECT * FROM `info` INNER JOIN `imagens` ON `info`.`id_imagem` = `imagens`.`id`");
     $sql_consult->execute();
     $dados = $sql_consult->fetchAll(PDO::FETCH_ASSOC);
     return $dados;

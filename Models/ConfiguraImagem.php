@@ -16,7 +16,11 @@
 
     private static $nova_imagem;
 
-    
+    /*
+
+      ´Método responsável para redimensionar a imagem
+
+    */
 
     public static function Redimensiona($nomefile){
 
@@ -25,8 +29,6 @@
       self::$imagem = imagecreatefromjpeg(self::$caminhoImagem);
       
       list( $widthFoto, $heightFoto) = getimagesize(self::$caminhoImagem);
-
-      echo "Tamanho antes: ".$widthFoto;
 
       self::$nova_imagem = imagecreatetruecolor(self::$NewWidthFoto, self::$NewHeightFoto);
 
@@ -48,9 +50,6 @@
     imagedestroy(self::$nova_imagem);
 
     list( $widthFoto, $heightFoto) = getimagesize(self::$caminhoImagem);
-    echo "</br>";
-    echo "Tamanho depois: ".$widthFoto;
-
 
       
     }

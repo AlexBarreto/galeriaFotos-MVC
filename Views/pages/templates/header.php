@@ -10,4 +10,10 @@
     <link href = "<?php echo INCLUDE_PATH_FULL?>css/style.css" rel="stylesheet" type="text/css">
   </head>
   <Body>
-    <h1>Header</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 bg-primary text-white text-center">
+          <h1>GALERIA DE FOTOS</h1>
+        </div>
+      </div>
+    </div>

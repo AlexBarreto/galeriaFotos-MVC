@@ -18,13 +18,13 @@
 
         $nomefile = md5($_FILES['foto']['name'].rand(1,999)).'.jpg';
         move_uploaded_file($_FILES['foto']['tmp_name'], 'img/'.$nomefile);
+        echo '<div class="alert alert-success" role="alert">Imagem carregada com sucesso!</div>';
 
       }else{
-        echo "Só e póssivel carregar arquivos nos formatos JPEG ou JPG!";
+        echo "Carregue um arquivo no formato JPEG ou JPG!";
         exit;
       }
       return $nomefile;
-      exit;
     }
 
 
